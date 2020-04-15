@@ -19,15 +19,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./CarND-Advanced-Lane-Lines/output_images/undistorted_calibration2.jpg "Undistorted"
-[image2]: ./CarND-Advanced-Lane-Lines/undistorted_images/undistorted_test1.jpg "Road Transformed"
-[image3]: ./CarND-Advanced-Lane-Lines/combined.png "Binary Example"
-[image4]: ./CarND-Advanced-Lane-Lines/warped_gre.png "Warp Example"
-[image6]: ./CarND-Advanced-Lane-Lines/output_images/finish_test1.jpg "Output"
-[image7]: ./CarND-Advanced-Lane-Lines/output_images/undistorted_calibration2.jpg "Undistorted calibration image"
+[image1]: ./output_images/undistorted_calibration2.jpg "Undistorted"
+[image2]: ./undistorted_images/undistorted_test1.jpg "Road Transformed"
+[image3]: ./combined.png "Binary Example"
+[image4]: ./warped_gre.png "Warp Example"
+[image6]: ./output_images/finish_test1.jpg "Output"
+[image7]: ./output_images/undistorted_calibration2.jpg "Undistorted calibration image"
 
-[video1]: ./CarND-Advanced-Lane-Lines/output_video/project_video_all.mp4 "Project Video"
-[video2]: ./CarND-Advanced-Lane-Lines/output_video/harder_challenge_video_all.mp4 "Harder Video"
+[video1]: ./output_video/project_video_all.mp4 "Project Video"
+[video2]: ./output_video/harder_challenge_video_all.mp4 "Harder Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
