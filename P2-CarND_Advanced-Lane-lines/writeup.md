@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/undistorted_calibration2.jpg "Undistorted"
 [image2]: ./undistorted_images/undistorted_test1.jpg "Road Transformed"
 [image3]: ./combined.png "Binary Example"
-[image4]: ./warped_gre.png "Warp Example"
+[image4]: ./warped_grey.png "Warp Example"
 [image6]: ./output_images/finish_test1.jpg "Output"
 [image7]: ./output_images/undistorted_calibration2.jpg "Undistorted calibration image"
 
@@ -46,7 +46,8 @@ You're reading it!
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the function calibrateCamera and search_corners of the IPython notebook located in "./CarND-Advanced-Lane-Lines/Advanced_FInding_Project.ipynb".  
+The code for this step is contained in the function calibrateCamera and search_corners of the IPython notebook located [here](./CarND-Advanced-Lane-Lines/Advanced_FInding_Project.ipynb)
+
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
@@ -61,7 +62,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ./CarND-Advanced-Lane-Lines/undistorted_images/
+To demonstrate this step, I will describe how I apply the distortion correction, you can see some images [here](./CarND-Advanced-Lane-Lines/undistorted_images/)
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -74,7 +75,7 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform includes a function called `warper_image()`, defined in the file `./CarND-Advanced-Lane-Lines/examples/example.ipynb`.  The `warper()` function takes as inputs an image (`image, image_proc, M, show=False`). This function call to perspectiveTransform() and send the image. perspectiveTransform() has defined  source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
+The code for my perspective transform includes a function called `warper_image()`, defined in the file [file](./CarND-Advanced-Lane-Lines/examples/example.ipynb) ``.  The `warper()` function takes as inputs an image (`image, image_proc, M, show=False`). This function call to perspectiveTransform() and send the image. perspectiveTransform() has defined  source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
 
 ```python
     src = np.float32(
@@ -124,8 +125,7 @@ I implemented this step in the function "draw_on_image(undist, warped_img, left_
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result]
-[video1] 
+Here's a [link to my video result](video1)
 
 
 
