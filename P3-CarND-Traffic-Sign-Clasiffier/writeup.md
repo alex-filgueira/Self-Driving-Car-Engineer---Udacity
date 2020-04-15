@@ -20,16 +20,16 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 
-[image0]: ./CarND-Traffic-Sign-Classifier-Project/images_output/statistics.PNG "Statistics"
-[image1]: ./CarND-Traffic-Sign-Classifier-Project/images_output/visualization_data.PNG "Visualization"
-[image2]: ./CarND-Traffic-Sign-Classifier-Project/images_output/gray_escaling.PNG "Grayscaling"
-[image3]: ./CarND-Traffic-Sign-Classifier-Project/images_output/gradients.PNG "Gradients"
-[image4]: ./CarND-Traffic-Sign-Classifier-Project/my_signals/14.stop_2.PNG "My signal -> Stop"
-[image5]: ./CarND-Traffic-Sign-Classifier-Project/my_signals/2.max50.PNG "My signal -> Max 50-1"
-[image6]: ./CarND-Traffic-Sign-Classifier-Project/my_signals/2.max50_2.PNG "My signal -> Max 50-2"
-[image7]: ./CarND-Traffic-Sign-Classifier-Project/my_signals/20.curva_derecha.PNG "My signal -> Right curve"
-[image8]: ./CarND-Traffic-Sign-Classifier-Project/my_signals/33.obligatoriodecha.PNG "My signal -> Right now"
-[image9]: ./CarND-Traffic-Sign-Classifier-Project/images_output/my_images_statistic.PNG "My signals Statistics"
+[image0]: ./images_output/statistics.PNG "Statistics"
+[image1]: ./images_output/visualization_data.PNG "Visualization"
+[image2]: ./images_output/gray_escaling.PNG "Grayscaling"
+[image3]: ./images_output/gradients.PNG "Gradients"
+[image4]: ./my_signals/14.stop_2.PNG "My signal -> Stop"
+[image5]: ./my_signals/2.max50.PNG "My signal -> Max 50-1"
+[image6]: ./my_signals/2.max50_2.PNG "My signal -> Max 50-2"
+[image7]: ./my_signals/20.curva_derecha.PNG "My signal -> Right curve"
+[image8]: ./my_signals/33.obligatoriodecha.PNG "My signal -> Right now"
+[image9]: ./images_output/my_images_statistic.PNG "My signals Statistics"
 
 
 ## Rubric Points
@@ -40,7 +40,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](./CarND-Traffic-Sign-Classifier-Project/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](./Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -59,8 +59,8 @@ The summary statistics of the traffic signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed
 
-![alt text][image0]
-![alt text][image1]
+![][image0]
+![][image1]
 
 ### Design and Test a Model Architecture
 
@@ -69,7 +69,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 I tried proced the images in the Neural Network using RGB color but the results was not enought good.
 
 After I convert the image to grayscale and also found the edges using gradient x + y filter but the results was worse.
-![alt text][image3]
+![][image3]
 
 When I tried to procesd the images in the Neural Network using only the images in gray the results was so good.
 
@@ -77,7 +77,7 @@ Mod: 02/04/20 -> After a feedback I added a normalize for all the images.
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![][image2]
 
 
 
@@ -153,8 +153,8 @@ I triyed to aument and reduce epoch and batch_size but the results was worse or 
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![][image4] ![][image5] ![][image6] 
+![][image7] ![][image8]
 
 I think that the most important problem for classify this images is the "quality", the system was trained with a big set of images taked from far, with bad light and they was cropped. My set of images have high colors and are good focus.
 
