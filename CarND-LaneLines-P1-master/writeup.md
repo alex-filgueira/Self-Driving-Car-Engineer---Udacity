@@ -52,13 +52,18 @@ You can see the images in the correspondent directory.
 
 ./images_output
 
-![alt text][image1], ![alt text][image2], ![alt text][image3], ![alt text][image4], ![alt text][image5], ![alt text][image6]
+"Solid white curve"
+![alt text][image1]
+"Solid white only in right"
+![alt text][image2]
+
+![alt text][image3] ![alt text][image4] ![alt text][image5] ![alt text][image6]
 
 Also you can see the out videos in:
 
 ./videos_output directory.
 
-![alt text][video1], ![alt text][video2], ![alt text][video3]
+[video1], [video2], [video3]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
