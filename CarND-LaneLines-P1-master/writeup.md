@@ -30,29 +30,39 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 6 steps. 
+My pipeline consisted of 6 steps:
+
 1- The function color_filter_remove() filter all colors that are not white and yellow using HSV values.
 
 2- The func. canny() search edges.
+
 3- The func. region_of_interest() cropped the region in fron of the vehicle, with size of pyramid.
+
 4- Apply the func. hough_lines() for search the lines in the image cropped.
+
 5- The func. test_large_line() search the lines that match with some parameters and calculate the long lane for paint the 2 proyections in the final image.
+
 6- Paint the 2 final lines in the image.
 
 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+## If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text]
 You can see the images in the correspondent directory.
-./images_output
-Ex: [image1]
 
-Also you can see the out videos in ./videos_output directory.
+./images_output
+
+![alt text][image1], ![alt text][image2], ![alt text][image3], ![alt text][image4], ![alt text][image5], ![alt text][image6]
+
+Also you can see the out videos in:
+
+./videos_output directory.
+
+![alt text][video1], ![alt text][video2], ![alt text][video3]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
-Ex: [video1]
+
 
 
 One potential shortcoming would be what would happen when the lines in the road are very worn-out.
