@@ -76,10 +76,6 @@ Also you can see the out videos in:
 "Video for the challenge"
 [video3]
 
-[![Video for the challenge](https://j.gifs.com/2xQjJj.gif)](video3)
-
-![alt text][https://j.gifs.com/2xQjJj.gif]
-
 
 
 ### 2. Identify potential shortcomings with your current pipeline
@@ -87,6 +83,7 @@ Also you can see the out videos in:
 
 
 One potential shortcoming would be what would happen when the lines in the road are very worn-out.
+
 Other potential problem is if the road have curves.
 
 
