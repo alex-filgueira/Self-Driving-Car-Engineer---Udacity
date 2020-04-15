@@ -24,7 +24,10 @@ The goals / steps of this project are the following:
 [image3]: ./CarND-Advanced-Lane-Lines/combined.png "Binary Example"
 [image4]: ./CarND-Advanced-Lane-Lines/warped_gre.png "Warp Example"
 [image6]: ./CarND-Advanced-Lane-Lines/output_images/finish_test1.jpg "Output"
-[video1]: ./CarND-Advanced-Lane-Lines/output_video/project_video_all.mp4 "Video"
+[image7]: ./CarND-Advanced-Lane-Lines/output_images/undistorted_calibration2.jpg "Undistorted calibration image"
+
+[video1]: ./CarND-Advanced-Lane-Lines/output_video/project_video_all.mp4 "Project Video"
+[video2]: ./CarND-Advanced-Lane-Lines/output_video/harder_challenge_video_all.mp4 "Harder Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -46,21 +49,26 @@ The code for this step is contained in the function calibrateCamera and search_c
 
 I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
 
-I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result in ./CarND-Advanced-Lane-Lines/output_images/undistorted_calibration2.jpg
+I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result in:
+
+"Undistorted calibration image"
+![alt text][image7]
+
 
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ./CarND-Advanced-Lane-Lines/undistorted_images/
+To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ![alt text][./CarND-Advanced-Lane-Lines/undistorted_images/]
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used the HLS model. I filtered for S using the threshol:(170, 255).
 Also I filtered the image using gradient magnitude thresholds like (20,100), all in X.
-I used a combination of color and gradient thresholds to generate a binary image, you can see a example ./CarND-Advanced-Lane-Lines/combined.png
+I used a combination of color and gradient thresholds to generate a binary image, you can see a example.
+![alt text][image3]
 
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
@@ -85,7 +93,7 @@ The code for my perspective transform includes a function called `warper_image()
 
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
-'./warped_gre.png'
+![alt text][image4]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -105,7 +113,7 @@ The algorithm for calculate the position of the vehicle with respect to center t
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ./output_images/.
+I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ![alt text][./output_images/].
 
 
 
@@ -125,4 +133,4 @@ Here's a [link to my video result](./output_video/project_video_all.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-You can see the videos ./output_video/callenge_video_all.mp4 and ./output_video/harder_challenge_video_all.mp4, but the results are worse, in the first the algorirthm have problems with the colors of the road, and in the second have a lot of problems, with the light, the obstacles and the shorted distance, the algorithm is optimizated for long distances. 
+You can see the videos ![alt text][video1] and ![alt text][video2], but the results are worse, in the first the algorirthm have problems with the colors of the road, and in the second have a lot of problems, with the light, the obstacles and the shorted distance, the algorithm is optimizated for long distances. 
