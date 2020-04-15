@@ -56,14 +56,27 @@ You can see the images in the correspondent directory.
 ![alt text][image1]
 "Solid white only in right"
 ![alt text][image2]
-
-![alt text][image3] ![alt text][image4] ![alt text][image5] ![alt text][image6]
+"Solid yellow curve"
+![alt text][image3]
+"Solid yellow curve 2"
+![alt text][image4]
+"Solid yellow left"
+![alt text][image5]
+"Solid white lane switch"
+![alt text][image6]
 
 Also you can see the out videos in:
 
 ./videos_output directory.
 
-[video1], [video2], [video3]
+"Solid white right"
+[video1]
+"Solid yellow left"
+[video2]
+"Video for the challenge"
+[video3]
+[![video3](https://j.gifs.com/2xQjJj.gif)](video3)
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
