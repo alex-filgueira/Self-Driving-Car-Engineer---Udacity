@@ -27,7 +27,8 @@ The goals / steps of this project are the following:
 [image7]: ./output_images/undistorted_calibration2.jpg "Undistorted calibration image"
 
 [video1]: ./output_video/project_video_all.mp4 "Project Video"
-[video2]: ./output_video/harder_challenge_video_all.mp4 "Harder Video"
+[video2]: ./output_video/challenge_video_all.mp4 "Challenge Video"
+[video3]: ./output_video/harder_challenge_video_all.mp4 "Harder Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -60,7 +61,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ![alt text][./CarND-Advanced-Lane-Lines/undistorted_images/]
+To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ![alt text]./CarND-Advanced-Lane-Lines/undistorted_images/
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -113,7 +114,7 @@ The algorithm for calculate the position of the vehicle with respect to center t
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ![alt text][./output_images/].
+I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ![alt text]./output_images.
 
 
 
@@ -123,7 +124,8 @@ I implemented this step in the function "draw_on_image(undist, warped_img, left_
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./output_video/project_video_all.mp4)
+Here's a [link to my video result]
+[video1] 
 
 
 
@@ -133,4 +135,4 @@ Here's a [link to my video result](./output_video/project_video_all.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-You can see the videos ![alt text][video1] and ![alt text][video2], but the results are worse, in the first the algorirthm have problems with the colors of the road, and in the second have a lot of problems, with the light, the obstacles and the shorted distance, the algorithm is optimizated for long distances. 
+You can see the videos [video2] and [video3], but the results are worse, in the first the algorirthm have problems with the colors of the road, and in the second have a lot of problems, with the light, the obstacles and the shorted distance, the algorithm is optimizated for long distances. 
