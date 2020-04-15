@@ -124,12 +124,12 @@ The final model architecture (model.py lines 85-99) consisted of a convolution n
 
 To capture good driving behavior, I first recorded two laps on track one clock side and other contra clock side. Here is an example image of center lane driving:
 
-![alt text][image1]
+![][image1]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center.:
 
-![alt text][image2]
-![alt text][image3]
+![][image2]
+![][image3]
 
 
 Then I repeated this process on track two in order to get more data points.
@@ -145,7 +145,7 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 "Train on 12857 samples, validate on 3215 samples"
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting.
-I studyed the results, first with 10 epechos ![alt text][image4] and selected that the best configuration is with 5 epecohs: ![alt text][image5]
+I studyed the results, first with 10 epechos ![][image4] and selected that the best configuration is with 5 epecohs: ![][image5]
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
