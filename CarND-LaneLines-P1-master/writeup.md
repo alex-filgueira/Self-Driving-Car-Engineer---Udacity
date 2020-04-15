@@ -19,6 +19,11 @@ The goals / steps of this project are the following:
 [image5]: ./images_output/solidYellowLeft.jpg "Solid yellow left"
 [image6]: ./images_output/whiteCarLaneSwitch.jpg "Solid white lane switch"
 
+[video1]: ./videos_output/solidWhiteRight.mp4 "Solid white right"
+[video2]: ./videos_output/solidYellowLeft.mp4 "Solid yellow left"
+[video3]: ./videos_output/challenge.mp4 "Video for the challenge"
+
+
 ---
 
 ### Reflection
@@ -42,8 +47,11 @@ You can see the images in the correspondent directory.
 ./images_output
 Ex: [image1]
 
+Also you can see the out videos in ./videos_output directory.
+
 
 ### 2. Identify potential shortcomings with your current pipeline
+Ex: [video1]
 
 
 One potential shortcoming would be what would happen when the lines in the road are very worn-out.
