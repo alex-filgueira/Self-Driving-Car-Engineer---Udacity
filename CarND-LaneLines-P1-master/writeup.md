@@ -75,7 +75,8 @@ Also you can see the out videos in:
 [video2]
 "Video for the challenge"
 [video3]
-[![video3 alpha](https://j.gifs.com/2xQjJj.gif)](video3)
+[![Video for the challenge](https://j.gifs.com/2xQjJj.gif)](video3)
+
 
 
 
