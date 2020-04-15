@@ -32,6 +32,7 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 6 steps. 
 1- The function color_filter_remove() filter all colors that are not white and yellow using HSV values.
+
 2- The func. canny() search edges.
 3- The func. region_of_interest() cropped the region in fron of the vehicle, with size of pyramid.
 4- Apply the func. hough_lines() for search the lines in the image cropped.
