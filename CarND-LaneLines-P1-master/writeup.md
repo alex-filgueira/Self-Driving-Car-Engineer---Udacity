@@ -12,7 +12,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./images_output/solidWhiteCurve.jpg "Solid white curve"
+[image2]: ./images_output/solidWhiteRight.jpg "Solid white only in right"
+[image3]: ./images_output/solidYellowCurve.jpg "Solid yellow curve"
+[image4]: ./images_output/solidYellowCurve2.jpg "Solid yellow curve 2"
+[image5]: ./images_output/solidYellowLeft.jpg "Solid yellow left"
+[image6]: ./images_output/whiteCarLaneSwitch.jpg "Solid white lane switch"
 
 ---
 
@@ -34,8 +39,8 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 ![alt text]
 You can see the images in the correspondent directory.
-Example:
-https://view54dc5dc0.udacity-student-workspaces.com/view/CarND-LaneLines-P1/test_images_output/solidWhiteCurve.jpg
+./images_output
+Ex: [image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
