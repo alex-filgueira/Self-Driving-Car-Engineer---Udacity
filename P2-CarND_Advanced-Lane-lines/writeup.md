@@ -61,7 +61,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ![alt text]./CarND-Advanced-Lane-Lines/undistorted_images/
+To demonstrate this step, I will describe how I apply the distortion correction, you can see some images in ./CarND-Advanced-Lane-Lines/undistorted_images/
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -114,7 +114,7 @@ The algorithm for calculate the position of the vehicle with respect to center t
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ![alt text]./output_images.
+I implemented this step in the function "draw_on_image(undist, warped_img, left_fit, right_fit, M, left_curvature, right_curvature, center, show_values = False). You can see some examples in the folder ./output_images.
 
 
 
