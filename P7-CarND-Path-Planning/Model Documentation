@@ -1,0 +1,40 @@
+All the code modified is in the file main.cpp.
+You can see in the directory ./output a video captured from my results.
+The results are better than 5 milles.
+
+Now I sumarize most important lines for the code:
+Lines 1-14: Inlcudes files and librarys.
+Lines 18-24: Declare names space.
+Lines 27: init function main().
+Lines 31-35: Declare the map variables.
+Line 38: Extract map file.
+Lines 45-62: read all map lines and extract your values.
+Lines 64-65: Declare speed and line variables.
+Lines 67-70: Headlines for the onMessage declaration.
+Lines 70-442: Definition to onMessage.
+Lines 87-125: Read and calculate the car parameters.
+Lines 129-164: Read and calculate the other cars (neighbors) parameters.
+
+Lines 173-246: Calculate where are the others cars and if they are dangerous for our car. For this take in count, if the cars are in front o behind our car, our and their speed and the security distance.
+Lines 252-334: Are the process for define what do. In function to the line in wich is the car and the date from others cars, also have in count the speed, aceleration and the speed limiter.
+-> STATE MACHINE:
+	State-0: If not car in front. ->Go ahead.
+    		If a car in front -> If can turn? -> State <- 1(turn right) or State <- 2(turn left)
+    Setate-1: The car is in the midle of the lane?
+    	Yes: State <- 0.
+        No: State <- 1.
+    Setate-2: The car is in the midle of the lane?
+    	Yes: State <- 0.
+        No: State <- 2.
+    		
+
+Lines 340-380: Calculate 5 points for the spline function that use afert.
+Lines 371-373: Here we can define more or less aggressive how our car will do the changes of line.
+Lines 386-392: Transform coordinates to car system.
+Lines 395-396: Declare and create spline funcion using https://kluge.in-chemnitz.de/opensource/spline/ .
+Lines 398-403: Declarete de vectors using for pass the x,y positions and introduce in theirs the previous points.
+Lines 406-435: Using the spline function calculate the next x , y points for our car.
+Lines 410-436: Distribute the speed between the new calculates points.
+Lines 410-416: Calculate the new reference speed.
+Lines 439-444: Make and declarete the send function and their parametersusing json format.
+Lines 446-473: Not are modified.
