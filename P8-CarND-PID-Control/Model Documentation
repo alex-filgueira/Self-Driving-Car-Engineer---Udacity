@@ -1,0 +1,55 @@
+Sumaryze files:
+I modified the files main.cpp + PID.cpp + PID.h
+
+In PID.cpp I will describe some important functions:
+	void PID::Init(double Kp_, double Ki_, double Kd_)
+    	In this function I initialice some variables useds in the PID regulator.
+        This with the input function values:
+          Kp = Kp_;
+          Ki = Ki_;
+          Kd = Kd_;
+        And this with the 0.0 value. -> reset.
+          p_error = 0.0;
+          i_error = 0.0;
+          d_error = 0.0;
+          prev_cte = 0.0;
+          
+	void PID::UpdateError(double cte)
+    	In this functio nI calculate the errors how was described in class.
+          //P error
+          p_error = cte;
+
+          //D error
+          d_error = cte - prev_cte;
+          prev_cte = cte;
+
+          //I error
+          i_error = i_error + cte;
+          
+	double PID::TotalError()
+    	In this function I calculate the total PID value with the errors and the PID parameters.
+        -p_error * Kp - d_error * Kd - i_error * Ki.
+        
+In PID.h I declare the variables and funcions that was used for the program.
+
+In main.cpp:
+	The most important line is  "pid.Init(0.18, 0.008, 2.7);" (line 41).
+    Here I pass the PID parameters to the PID regulator.
+    The PID parameters Kp, Ki and Kd was calculed by hand maked some test.
+    I used she next method for calculate the parameters.
+    0: Initialize all values at 0.
+    1: Increase Kp until I have a constant oscillation.
+    2: Increase Kd until the oscillation desapears.
+    3: Repeat 1 and 2 until the increase of kd, not cause that a reduction in the oscillations.
+    4: Select the las values for Kp and Kd that make the system stable.
+    	In this moment the car run well with oscillations in speeds upper 30.
+    5: Increase Ki until the firts oscilations are to much bigger for the correct circulation car in the road.
+    6: Select the last correct value.
+    
+    In the folder ./video_out you can see 4 videos in wich I force the behaviors for the regulator not completed.
+    ./video_out/i.mp4 use only the Ki parameter, the car lose the "control" i nthe first moment.
+    ./video_out/p.mp4 use only the Kp parameter, you can see big oscillations cwhen the speed is increased. 
+    ./video_out/pd.mp4 use Kp + Ki and I have good results, the oscillations caused for P are controlled for the d part.
+    ./video_out/pid_bigI.mp4 in this video yo ucan see the problems when the I parameter is to much, in this case the car not go out the roa, but you can apreciate that at the first moments the oscillations are big and after are more smalls.
+    
+    Whit the values caculated Kp=0.18, Ki=0.008 and Kd=2.7 the car can make a loop to the circuit whitout step the road protecttions.
