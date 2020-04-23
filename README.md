@@ -24,3 +24,10 @@ In this repository I goruping the projects making for the [Udacity Self-Driving 
 [P7-CarND-Path-Planning](/P7-CarND-Path-Planning)
 
 [P8-CarND-PID-Control](/P8-CarND-PID-Control)
+
+...
+[P9-CarND-Improve-Your-Linkedln-Profile]
+[P10-CarND-Optimize-Your-GitHub-Profile]
+...
+
+[P11-CarND-Capstone](/P11-CarND-Capstone)
