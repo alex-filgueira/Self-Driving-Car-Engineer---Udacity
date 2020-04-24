@@ -1,0 +1,4 @@
+https://classroom.udacity.com/nanodegrees/nd013/parts/01a340a5-39b5-4202-9f89-d96de8cf17be/modules/702b3c5a-b896-4cca-8a64-dfe0daf09449/lessons/23b85cf1-bc20-469e-b34b-d321e677d91c/concepts/8c742938-8436-4d3d-9939-31e40284e7a6
+
+https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Udacity_VM_Base_V1.0.0.zip
+ The password for the VM is udacity-nd
